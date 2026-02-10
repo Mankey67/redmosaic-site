@@ -1,0 +1,24 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: #0e0e11;
+  color: #eaeaea;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #e63946;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+footer {
+  opacity: 0.6;
+  font-size: 0.9em;
+}
