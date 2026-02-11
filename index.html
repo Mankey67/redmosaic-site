@@ -1,36 +1,289 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>RedMosiac | Cybersecurity & Infrastructure Consulting</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RedMosaic — Security & Infrastructure Compliance</title>
+  <meta name="description" content="RedMosaic helps teams harden proxies, firewalls, and cloud edge with practical compliance, governance, and automation." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: modern font (works fine without it) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>RedMosiac</h1>
-    <p>Cybersecurity • Infrastructure • Compliance</p>
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">RedMosaic</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#deliverables">Deliverables</a>
+        <a href="#trust">Stack</a>
+        <a class="btn btn-ghost" href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>What We Do</h2>
-    <p>
-      RedMosaic helps organizations modernize, secure, and govern
-      network, proxy, firewall, and cloud infrastructure.
-    </p>
-  </section>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="kicker">
+            <span class="pill">DFW • Remote</span>
+            <span class="pill pill-outline">Governance + Automation</span>
+          </div>
 
-  <section>
-    <h2>Core Focus Areas</h2>
-    <ul>
-      <li>Proxy & Firewall Governance</li>
-      <li>Compliance & Policy Cleanup</li>
-      <li>TLS Modernization</li>
-      <li>Security Automation</li>
-    </ul>
-  </section>
+          <h1>
+            Make your edge <span class="neon">compliant</span>,
+            <span class="neon2">clean</span>, and
+            <span class="neon3">automated</span>.
+          </h1>
 
-  <footer>
-    <p>© 2026 RedMosiac LLC</p>
+          <p class="subhead">
+            RedMosaic helps teams standardize proxy / firewall controls, eliminate TLS risk, and build
+            repeatable governance across on-prem and cloud — without bureaucracy.
+          </p>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Book a quick consult</a>
+            <a class="btn btn-secondary" href="#services">See services</a>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <div class="metric-num">30–90</div>
+              <div class="metric-label">day cleanup programs</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">TLS</div>
+              <div class="metric-label">hardening + reporting</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">IaC</div>
+              <div class="metric-label">Ansible/Terraform ready</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="panel">
+            <div class="panel-top">
+              <div class="dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="panel-title">REDMOSAIC / STATUS</div>
+            </div>
+
+            <div class="panel-body">
+              <div class="log">
+                <div class="log-line"><span class="tag ok">OK</span> Policy baseline detected</div>
+                <div class="log-line"><span class="tag warn">WARN</span> Dormant rules &gt; 90 days</div>
+                <div class="log-line"><span class="tag bad">RISK</span> Legacy TLS present</div>
+                <div class="log-line"><span class="tag ok">OK</span> Reporting pipeline ready</div>
+              </div>
+
+              <div class="panel-cards">
+                <div class="mini">
+                  <div class="mini-k">Outcome</div>
+                  <div class="mini-v">Cleaner controls</div>
+                </div>
+                <div class="mini">
+                  <div class="mini-k">Proof</div>
+                  <div class="mini-v">Auditable reports</div>
+                </div>
+                <div class="mini">
+                  <div class="mini-k">Ops</div>
+                  <div class="mini-v">Automated checks</div>
+                </div>
+              </div>
+
+              <div class="scanline" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>Focused workstreams that reduce risk, improve observability, and make compliance repeatable.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Proxy &amp; Web Gateway Governance</h3>
+            <p>Rule standards, ownership, dormancy policy, exceptions, and change control you can actually operate.</p>
+            <ul>
+              <li>Rule hygiene + ownership model</li>
+              <li>Legacy cleanup programs</li>
+              <li>Evidence-ready reporting</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>TLS &amp; Crypto Compliance</h3>
+            <p>Identify and eliminate old protocols, align to policy, and build a reporting cadence.</p>
+            <ul>
+              <li>TLS version deprecation plans</li>
+              <li>App owner outreach playbooks</li>
+              <li>Dashboards &amp; deliverables</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Firewall / Edge Policy Modernization</h3>
+            <p>Normalize rule intent, reduce sprawl, and create guardrails across vendors and environments.</p>
+            <ul>
+              <li>Policy normalization</li>
+              <li>Cleanup + segmentation guidance</li>
+              <li>Change workflow patterns</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Automation Enablement</h3>
+            <p>Turn “monthly audits” into continuous checks using Terraform + Ansible + lightweight Python glue.</p>
+            <ul>
+              <li>IaC baseline templates</li>
+              <li>Compliance checks &amp; reports</li>
+              <li>Runbooks + handoff</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="deliverables" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>What you get</h2>
+          <p>Concrete artifacts, not vibes. You leave with a working system and proof.</p>
+        </div>
+
+        <div class="split">
+          <div class="stack">
+            <div class="stack-item">
+              <div class="icon" aria-hidden="true">01</div>
+              <div>
+                <h3>Standards + policy pack</h3>
+                <p>Definitions for “good” rules, ownership, exceptions, and lifecycle.</p>
+              </div>
+            </div>
+            <div class="stack-item">
+              <div class="icon" aria-hidden="true">02</div>
+              <div>
+                <h3>Reports + dashboards</h3>
+                <p>Splunk-friendly exports and executive summaries for audits and leadership.</p>
+              </div>
+            </div>
+            <div class="stack-item">
+              <div class="icon" aria-hidden="true">03</div>
+              <div>
+                <h3>Automation starter kit</h3>
+                <p>Terraform + Ansible patterns with a simple pipeline you can extend.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="aside">
+            <div class="aside-card">
+              <h3>Typical engagement</h3>
+              <div class="timeline">
+                <div class="t-item"><span>Week 1</span> Discovery + baseline</div>
+                <div class="t-item"><span>Week 2–4</span> Cleanup + standards</div>
+                <div class="t-item"><span>Week 4+</span> Automation + cadence</div>
+              </div>
+              <div class="note">
+                Want a quick win? Start with a <strong>30-day rule hygiene sprint</strong>.
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Tooling &amp; ecosystems</h2>
+          <p>Vendor-agnostic mindset, enterprise-grade patterns.</p>
+        </div>
+
+        <div class="logos">
+          <span class="logo">Zscaler / SWG</span>
+          <span class="logo">Netskope</span>
+          <span class="logo">Palo Alto</span>
+          <span class="logo">Fortinet</span>
+          <span class="logo">Splunk</span>
+          <span class="logo">AWS</span>
+          <span class="logo">Terraform</span>
+          <span class="logo">Ansible</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div class="contact-card">
+          <h2>Let’s make it clean.</h2>
+          <p>
+            If you’re dealing with rule sprawl, TLS cleanup, or compliance deliverables that never end —
+            I can help you ship a program that sticks.
+          </p>
+
+          <div class="contact-actions">
+            <!-- Update these -->
+            <a class="btn btn-primary" href="mailto:contact@redmosiac.com?subject=RedMosaic%20Consult%20Request">Email me</a>
+            <a class="btn btn-secondary" href="#" aria-disabled="true" title="Add your Calendly link">Add Calendly</a>
+          </div>
+
+          <div class="contact-meta">
+            <div><span class="label">Response time</span> 24–48 hours</div>
+            <div><span class="label">Location</span> DFW • Remote</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <div class="foot-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>RedMosaic</span>
+        </div>
+        <div class="foot-sub">Security • Compliance • Automation</div>
+      </div>
+
+      <div class="foot-right">
+        <a href="#top">Top</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container tiny">
+      © <span id="y"></span> RedMosaic. All rights reserved.
+    </div>
   </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
