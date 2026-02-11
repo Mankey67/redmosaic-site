@@ -24,28 +24,23 @@ body{
 }
 
 /* Background: gradient + optional image */
-body::before{
-  content:"";
-  position:fixed; inset:0;
+body{
+  /* keep your existing font, margin, color, etc... */
+
   background:
     radial-gradient(900px 600px at 20% 0%, rgba(124,58,237,.18), transparent 60%),
     radial-gradient(700px 500px at 90% 30%, rgba(34,211,238,.14), transparent 60%),
     radial-gradient(700px 500px at 50% 100%, rgba(251,113,133,.10), transparent 60%),
-    linear-gradient(180deg, #070912 0%, #050611 100%);
-  z-index:-2;
+    linear-gradient(180deg, rgba(5,8,18,.88), rgba(5,8,18,.94)),
+    url("./rm3.png");
+
+  background-size: auto, auto, auto, auto, cover;
+  background-position: center, center, center, center, center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* Optional background image */
-body::after{
-  content:"";
-  position:fixed; inset:0;
-  background-image: url("rm3.png"); /* put rm3.png in /assets */
-  background-size: cover;
-  background-position: center;
-  opacity: .10;
-  filter: saturate(.9) contrast(1.05);
-  z-index:-3;
-}
+
 
 /* frame */
 .container{
